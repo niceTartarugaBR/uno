@@ -1,0 +1,20 @@
+.Feature{
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+}
+
+.Feature .featureWrapper{
+    z-index: 2;
+    position: relative;
+}
+
+.Feature .featureWrapper::before{
+    content: "";
+    position: absolute;
+    background: linear-gradient(94deg,#9b51e0 2.84%,#3081ed 99.18%);
+    opacity: .4;
+    height: 400px;
+    left: 0;
+    right: 0;
+    max-width: 100;
+}
