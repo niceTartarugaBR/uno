@@ -8,6 +8,7 @@ const Feature = () => {
     return (
         <section className={style.Feature}>
             <div className={style.featureWrapper}>
+            <div className={style.featureWrapperContent}>
                 {/* texto de cima */}
                 <div className={style.featureText}>
                     <h2>Benefícios de joga uno</h2>
@@ -58,6 +59,7 @@ const Feature = () => {
                         <div className={style.featureCardsText}>
                             <h2>Estimula o raciocínio rápido.</h2>
                         </div>
+                    </div>
                     </div>
                 </div>
             </div>
