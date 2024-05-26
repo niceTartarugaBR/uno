@@ -1,8 +1,8 @@
 import style from "../../components/feature/feature.module.css";
-import Shild from "../../assets/img/shield.png";
-import Archive from "../../assets/img/archive.png";
-import Midia from "../../assets/img/midia.png";
-import Rocket from "../../assets/img/rocket.png";
+import Shild from "../../assets/img/shild-icon.svg";
+import Archive from "../../assets/img/box-icon.svg";
+import Midia from "../../assets/img/media-icon.svg";
+import Rocket from "../../assets/img/rocket-icon.svg";
 
 const Feature = () => {
     return (
@@ -11,11 +11,12 @@ const Feature = () => {
             <div className={style.featureWrapperContent}>
                 {/* texto de cima */}
                 <div className={style.featureText}>
-                    <h2>Benefícios de joga uno</h2>
+                    <h1>Benefícios de joga uno</h1>
                     <p>Saiba mais sobres os benefícios de joga uno com seus amigos e família</p>
                 </div>
                  {/* cards */}
                 <div className={style.Content}>
+                    <div className={style.divisaoUm}>
                     {/* card 1 */}
                     <div className={style.featureCardDiv}>
                         <div className={style.featureCards}>
@@ -38,7 +39,9 @@ const Feature = () => {
                             <h2>Pensamentos fora da caixinha.</h2>
                         </div>
                     </div>
+                    </div>
                     {/* card 3 */}
+                    <div className={style.divisaoDois}>
                     <div className={style.featureCardDiv}>
                         <div className={style.featureCards}>
                             <a>
@@ -59,6 +62,7 @@ const Feature = () => {
                         <div className={style.featureCardsText}>
                             <h2>Estimula o raciocínio rápido.</h2>
                         </div>
+                    </div>
                     </div>
                     </div>
                 </div>

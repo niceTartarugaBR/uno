@@ -24,7 +24,7 @@
     z-index: -1;
 }
 
-.Feature .featureWrapper .featureWrapper .featureWrapperContent{
+.Feature .featureWrapper .featureWrapperContent{
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -34,18 +34,25 @@
     margin: 0 auto;
     max-width: 1280px;
 }
-.featureWrapper .featureWrapperContent .featureContent{
+.featureWrapper .featureWrapperContent{
     display: flex;
     gap: 3rem;
 }
-.featureWrapperContent .featureContent .featureCardDiv{
+.featureWrapperContent .featureCardDiv{
     display: flex;
+    flex-direction: column;
     gap: 1rem;
 }
-.content{
+.Content{
+    display: flex;
+}
+.Content .divisaoUm{ 
     display: flex;
     margin: 0 auto;
-    max-width: 1280px;
+}
+.Content .divisaoDois{
+    display: flex;
+    margin: 0 auto;
 }
 .icons{
     padding: 40px;
@@ -61,9 +68,15 @@
     trasnform: scale(1.06);
 }
 .featureText {
-    margin-bottom: 30px;
-    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    font-size: 27px;
+    gap: 2rem;
     color: #fff;
+}
+.featureText h1{
+    font-size: 50px;
 }
 .featureCardsText h2{
     color: #d6d6d6;
@@ -78,6 +91,17 @@
         flex-direction: column;
     }
     .featureWrapper{
+        flex-direction: column;
+    }
+    .featureText{
+        max-width: 400px;
+        font-size: 20px;
+    }
+    .featureText h1{
+        font-size: 35px;
+    }
+    .Content{
+        display: flex;
         flex-direction: column;
     }
 }
